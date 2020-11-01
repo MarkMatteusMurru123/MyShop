@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Data.OrderItemData" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAAAACAAAgAAAAAAAAAAAAAAAAAAEAAAAAAIAAA=</HashCode>
+      <FileName>OrderItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.OrderData" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAIAAAAAAAAAQIAAAABAAIABAAAAAA=</HashCode>
+      <FileName>OrderData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.CatalogData" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CatalogData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.ProductData" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAgAgAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>ProductData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.BrandData" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BrandData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.BasketItemData" Collapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>BasketItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.BasketData" Collapsed="true">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasketData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Abstractions.UniqueItemData" Collapsed="true">
+    <Position X="9" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstractions\UniqueItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Abstractions.NamedItemData" Collapsed="true">
+    <Position X="9" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstractions\NamedItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

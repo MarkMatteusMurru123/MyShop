@@ -15,9 +15,9 @@ namespace Soft.Data
         }
         public DbSet<OrderData> Orders { get; set; } //siia paned mitmused! - need on orderite setid
         public DbSet<OrderItemData> OrderItems { get; set; }
-        public DbSet<CatalogTypeData> CatalogTypes { get; set; }
-        public DbSet<CatalogBrandData> CatalogBrands { get; set; }
-        public DbSet<CatalogData> Catalogs { get; set; }
+        public DbSet<CatalogData> CatalogTypes { get; set; }
+        public DbSet<BrandData> CatalogBrands { get; set; }
+        public DbSet<ProductData> Catalogs { get; set; }
         public DbSet<BasketData> Baskets { get; set; }
         public DbSet<BasketItemData> BasketItems { get; set; }
 
