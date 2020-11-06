@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Data;
+using Infra;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,18 +14,17 @@ namespace Soft.Data
             : base(options)
         {
         }
-        public DbSet<OrderData> Orders { get; set; } //siia paned mitmused! - need on orderite setid
-        public DbSet<OrderItemData> OrderItems { get; set; }
-        public DbSet<CatalogData> CatalogTypes { get; set; }
-        public DbSet<BrandData> CatalogBrands { get; set; }
-        public DbSet<ProductData> Catalogs { get; set; }
-        public DbSet<BasketData> Baskets { get; set; }
-        public DbSet<BasketItemData> BasketItems { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder b)
+        {
+            base.OnModelCreating(b);
+            InitializeTables(b);
 
+        }
 
-
-
-
+        internal static void InitializeTables(ModelBuilder b)
+        {
+            ShopDbContext.InitializeTables(b);
+        }
     }
 }

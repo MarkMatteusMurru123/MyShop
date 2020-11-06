@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Soft.Migrations
 {
-    public partial class catalog : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -74,7 +74,7 @@ namespace Soft.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CatalogBrands",
+                name: "Brands",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
@@ -82,7 +82,7 @@ namespace Soft.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CatalogBrands", x => x.Id);
+                    table.PrimaryKey("PK_Brands", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -90,28 +90,11 @@ namespace Soft.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
-                    Name = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false),
-                    PictureUri = table.Column<string>(nullable: true),
-                    CatalogTypeId = table.Column<string>(nullable: true),
-                    CatalogBrandId = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Catalogs", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "CatalogTypes",
-                columns: table => new
-                {
-                    Id = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CatalogTypes", x => x.Id);
+                    table.PrimaryKey("PK_Catalogs", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -147,6 +130,23 @@ namespace Soft.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Orders", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Products",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    Name = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    Price = table.Column<decimal>(nullable: false),
+                    PictureUri = table.Column<string>(nullable: true),
+                    CatalogTypeId = table.Column<string>(nullable: true),
+                    CatalogBrandId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -319,19 +319,19 @@ namespace Soft.Migrations
                 name: "Baskets");
 
             migrationBuilder.DropTable(
-                name: "CatalogBrands");
+                name: "Brands");
 
             migrationBuilder.DropTable(
                 name: "Catalogs");
-
-            migrationBuilder.DropTable(
-                name: "CatalogTypes");
 
             migrationBuilder.DropTable(
                 name: "OrderItems");
 
             migrationBuilder.DropTable(
                 name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "Products");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

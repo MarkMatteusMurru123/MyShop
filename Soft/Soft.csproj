@@ -22,7 +22,6 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Pages\Pages.csproj" />
   </ItemGroup>
 

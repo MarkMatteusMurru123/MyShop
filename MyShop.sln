@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft", "Soft\Soft.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{DB930E25-7C5D-4EEA-BEFE-D4A15728597B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pages", "Pages\Pages.csproj", "{EAEACA2F-283D-48D0-8108-D3804C1123CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pages", "Pages\Pages.csproj", "{EAEACA2F-283D-48D0-8108-D3804C1123CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{978377BA-2847-45D6-89E3-3E0D6F4E20A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{EAEACA2F-283D-48D0-8108-D3804C1123CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAEACA2F-283D-48D0-8108-D3804C1123CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAEACA2F-283D-48D0-8108-D3804C1123CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978377BA-2847-45D6-89E3-3E0D6F4E20A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978377BA-2847-45D6-89E3-3E0D6F4E20A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978377BA-2847-45D6-89E3-3E0D6F4E20A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978377BA-2847-45D6-89E3-3E0D6F4E20A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
