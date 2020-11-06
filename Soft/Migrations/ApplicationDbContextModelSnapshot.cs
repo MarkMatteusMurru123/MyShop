@@ -47,7 +47,7 @@ namespace Soft.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("Decimal(16,4)");
 
                     b.HasKey("Id");
 
@@ -129,7 +129,7 @@ namespace Soft.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("Decimal(16,4)");
 
                     b.Property<int>("Units")
                         .HasColumnType("int");
@@ -160,7 +160,7 @@ namespace Soft.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("Decimal(16,4)");
 
                     b.HasKey("Id");
 

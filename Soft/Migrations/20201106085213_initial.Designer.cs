@@ -10,7 +10,7 @@ using Soft.Data;
 namespace Soft.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201106084122_initial")]
+    [Migration("20201106085213_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,7 +49,7 @@ namespace Soft.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("Decimal(16,4)");
 
                     b.HasKey("Id");
 
@@ -131,7 +131,7 @@ namespace Soft.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("Decimal(16,4)");
 
                     b.Property<int>("Units")
                         .HasColumnType("int");
@@ -162,7 +162,7 @@ namespace Soft.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("Decimal(16,4)");
 
                     b.HasKey("Id");
 

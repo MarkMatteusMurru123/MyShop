@@ -51,7 +51,7 @@ namespace Soft.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
-                    UnitPrice = table.Column<decimal>(nullable: false),
+                    UnitPrice = table.Column<decimal>(type: "Decimal(16,4)", nullable: false),
                     Quantity = table.Column<int>(nullable: false),
                     CatalogItemId = table.Column<string>(nullable: true),
                     BasketId = table.Column<string>(nullable: true)
@@ -105,7 +105,7 @@ namespace Soft.Migrations
                     CatalogItemId = table.Column<string>(nullable: true),
                     ProductName = table.Column<string>(nullable: true),
                     PictureUri = table.Column<string>(nullable: true),
-                    UnitPrice = table.Column<decimal>(nullable: false),
+                    UnitPrice = table.Column<decimal>(type: "Decimal(16,4)", nullable: false),
                     Units = table.Column<int>(nullable: false),
                     OrderId = table.Column<string>(nullable: true)
                 },
@@ -139,7 +139,7 @@ namespace Soft.Migrations
                     Id = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false),
+                    Price = table.Column<decimal>(type: "Decimal(16,4)", nullable: false),
                     PictureUri = table.Column<string>(nullable: true),
                     CatalogTypeId = table.Column<string>(nullable: true),
                     CatalogBrandId = table.Column<string>(nullable: true)
