@@ -20,6 +20,7 @@ namespace Pages
 
         public IList<TData> Items { get; set; }
 
+       
         public async Task OnGetIndexAsync() => Items = await set.ToListAsync(); //teeb kätte antud dbsetist listi
         public string Caption { get; protected set; }
 

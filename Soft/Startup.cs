@@ -38,6 +38,9 @@ namespace Soft
 
             services.AddDbContext<ShopDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString(connection)));
+
+            services.AddDbContext<SoftContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SoftContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
